@@ -8,5 +8,5 @@ include_directories(include)
 
 
 
-add_executable(mp2-lab4-polinoms samples/main.cpp)
+add_executable(mp2-lab4-polinoms samples/main.cpp include/polinom.h include/monom.h)
 add_subdirectory(google_tests)
