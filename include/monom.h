@@ -2,12 +2,12 @@
 #define MP2_LAB4_POLINOMS_MONOM_H
 using namespace std;
 struct Monom {
-    int coefficient;
+    float coefficient;
     int powers;
     Monom *next_monom;
     Monom *previous_monom;
 
-    Monom(int coefficient, int powers) {
+    Monom(float coefficient, int powers) {
         if (powers > 999 || powers < 0) {
             throw runtime_error("Cannot create monom: power out of range");
         } else {

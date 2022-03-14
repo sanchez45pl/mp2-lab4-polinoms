@@ -11,7 +11,7 @@ public:
 
     Polinom() : first_monom(nullptr), last_monom(nullptr) {};
 
-    void add_monom(int coefficient, int powers) {
+    void add_monom(float coefficient, int powers) {
         Monom *new_monom = new Monom(coefficient, powers);
         Monom *current_monom = find_where_to_insert(new_monom);
         insert(current_monom, new_monom);
@@ -143,7 +143,7 @@ Polinom operator-(Polinom first_polinom, Polinom second_polinom) {
     return new_polinom;
 }
 
-Polinom operator*(int number, Polinom polinom) {
+Polinom operator*(float number, Polinom polinom) {
     Polinom new_polinom;
     Monom *current_monom = polinom.first_monom;
     while (current_monom) {
@@ -159,7 +159,7 @@ Polinom operator*(Polinom first_polinom, Polinom second_polinom) {
     Monom *current_monom_from_second = second_polinom.first_monom;
     while (current_monom_from_first) {
         while (current_monom_from_second) {
-            int coefficient = current_monom_from_first->coefficient * current_monom_from_second->coefficient;
+            float coefficient = current_monom_from_first->coefficient * current_monom_from_second->coefficient;
             int powers = current_monom_from_first->powers + current_monom_from_second->powers;
             if (powers / 100 < current_monom_from_first->x_power() ||
                 powers / 10 % 10 < current_monom_from_first->y_power() ||

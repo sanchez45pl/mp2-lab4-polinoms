@@ -18,7 +18,7 @@ int main() {
         cin >> main_menu_command;
         if (main_menu_command == 1) {
             Polinom new_polinom;
-            int coefficient;
+            float coefficient;
             int powers;
             int should_continue = true;
             while (should_continue) {
