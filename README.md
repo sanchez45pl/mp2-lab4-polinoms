@@ -1,3 +1,4 @@
+# [Отчет по лабораторой работке](https://docs.google.com/document/d/1L06SOWdK7Uml_JSQBqJg4GhuyCjinm3o2ax0IvHRBSY/edit?usp=sharing)
 # ЛР 4. Арифметические операции с полиномами
 
 __Цель работы:__ 
